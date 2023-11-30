@@ -9,3 +9,5 @@ https://imskidmore.github.io/IsaacSkidmore/
 -Updated layout to look nicer and give better aesthetic
 
 11/30 SWITCHING TO REACT
+
+11/30 PSYCH NOT SWITCHING TO REACT, changed the vision, now planning on keeping retroy style and doing terminal based design with unique commands that user can input to see different information.
