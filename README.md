@@ -6,3 +6,4 @@ https://imskidmore.github.io/IsaacSkidmore/
 
 11/30 added trail that followed mouse
   -added chalkboard type functionality on homescreen
+  -Updated layout to look nicer and give better aesthetic
