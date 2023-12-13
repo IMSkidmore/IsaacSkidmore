@@ -17,3 +17,5 @@ Implement Ascii animation using ascii converter from pictures, and then display 
 Stick with retro style, envisioning a very simple full screen single screen application, immersive. have commands like "education" "more about me" "projects" "career" and others to bring up information, and try to include some easter eggs or nerdy references. Could have secret binary or hex codes.
 
 implementing code for ascii animation using javascript
+
+try to implement google gemini somehow to interact with user
