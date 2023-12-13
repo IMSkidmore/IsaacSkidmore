@@ -18,4 +18,4 @@ Stick with retro style, envisioning a very simple full screen single screen appl
 
 implementing code for ascii animation using javascript
 
-try to implement google gemini somehow to interact with user
+implement google gemini api and give it a lot of information about me, then let it answer whatever question the user visiting the website could ask.
