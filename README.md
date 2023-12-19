@@ -23,3 +23,5 @@ implement google gemini api and give it a lot of information about me, then let 
 Scrap the command style interface.. have ascii animation on startup, then show different options as links around centered ascii animation with titles such as "education" "ask me anything (using google gemini api)", "projects", etc, and have animation point at the option the user is hovering. On each tab show information, and highlight a number somewhere on that tab, then have one of the tabs be a secret password that the user can enter the numbers they've found for a a secret ascii animation or something cool.
 
 gemini seems unnecessary for this small of a project. It was fun to go through and learn but its time to pivot. Want to use bard and chatgpt while building to get as comfortable as possible with prompting. AI is the future stop being scared of it (that's to me who has been scared of it)
+
+different ideas for pivot are still doing command style, or doing discord style with channels with information, information could look like message from me.
