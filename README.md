@@ -25,3 +25,5 @@ Scrap the command style interface.. have ascii animation on startup, then show d
 gemini seems unnecessary for this small of a project. It was fun to go through and learn but its time to pivot. Want to use bard and chatgpt while building to get as comfortable as possible with prompting. 
 
 different ideas for pivot are still doing command style, or doing discord style with channels with information, information could look like message from me.
+
+work too busy, can't focus on this. want to get back to it
