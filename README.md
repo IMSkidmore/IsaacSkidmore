@@ -27,3 +27,5 @@ gemini seems unnecessary for this small of a project. It was fun to go through a
 different ideas for pivot are still doing command style, or doing discord style with channels with information, information could look like message from me.
 
 work too busy, can't focus on this. want to get back to it
+
+new idea, text based adventures, beat little enemies with spells to unlock different information as reusme, allow user to cast unique spell to get all information at once.
