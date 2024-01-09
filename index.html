@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Name]'s Resume</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Adventure</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>[Your Name]</h1>
-    <h2> Hello there!</h2>
-  </header>
-  <main>
-    <div class="channels">
-      <div class="channel" data-target="about-me">
-        <i class="fa fa-user"></i> About Me
-      </div>
-      <div class="channel" data-target="education">
-        <i class="fa fa-graduation-cap"></i> Education
-      </div>
-      <div class="channel" data-target="experience">
-        <i class="fa fa-briefcase"></i> Experience
-      </div>
+    <div class="container">
+        <div class="command-line">
+            <span id="output"></span>
+            <input type="text" id="input" placeholder="Type your command here">
+        </div>
     </div>
-    <div id="message-box">
-      </div>
-  </main>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
