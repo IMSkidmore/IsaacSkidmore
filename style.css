@@ -1,88 +1,29 @@
 body {
-    font-family: sans-serif;
-    background-color: #eee;
-    color: #333;
-  }
-  
-  header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1, h2 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  h2 {
-    font-size: 18px;
-    font-weight: normal;
-  }
-  
-  main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .channels {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .channel {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #f2f2f2;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .channel i {
-    margin-right: 5px;
-    color: #2c3e50;
-  }
-  
-  #message-box {
-    display: none;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Add styles for message content based on section (like emojis for About Me) */
-  
-  .active {
-    background-color: #ddd;
-  }
-  
-  /* Animations and transitions */
-  
-  .channel:hover {
-    background-color: #f5f5f5;
-  }
-  
-  #message-box.open {
-    display: block;
-    animation: slide-down 0.5s ease-in-out;
-  }
-  
-  @keyframes slide-down {
-    from {
-      transform: translateY(-100px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
+  font-family: monospace;
+  background-color: black;
+  color: green;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.command-line {
+  display: flex;
+  align-items: center;
+}
+
+#output {
+  width: 100%;
+  word-wrap: break-word;
+  animation: typing 2s steps(40, end);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
