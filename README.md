@@ -30,6 +30,8 @@ work too busy, can't focus on this. want to get back to it
 
 new idea, text based adventures, beat little enemies with spells to unlock different information as reusme, allow user to skip game and just get info. try to keep pretty short, <5 mins. have little ascii animations to make more fun
 
+colored text for image layers
+
 try to have done by 1/31 going into february
 
 work post move
