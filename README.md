@@ -35,3 +35,5 @@ colored text for image layers
 try to have done by 1/31 going into february
 
 work post move
+
+finally settled, deadline of this friday (2/9)
