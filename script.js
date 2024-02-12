@@ -1,43 +1,41 @@
-const output = document.getElementById('output');
-const input = document.getElementById('input');
+const screen = document.getElementById('screen');
+const userInput = document.getElementById('userInput');
+const cursor = document.getElementById('cursor');
 
-let gameState = 'start';
-let userHealth = 100;
-let userMana = 10;
-let monsterHealth = 100;
+// Initial typing animation
+let introText = 'Isaac Skidmore\n\nWelcome to my interactive resume!\nTo receive a list of commands, please type help\n';
+let i = 0;
+const typingSpeed = 50;
+const interval = setInterval(() => {
+    screen.textContent += introText[i];
+    i++;
+    if (i === introText.length) {
+        clearInterval(interval);
+        cursor.style.display = 'inline';
+        userInput.focus();
+    }
+}, typingSpeed);
 
-function typeText(text) {
-    output.textContent += text;
-}
+// Command handling
+const commands = {
+    help: () => screen.textContent += '\nAvailable commands: education, experience, skills, aboutme, clear\n',
+    education: () => screen.textContent += '\n**Education:**\n* Arizona State University (20XX - 20XX)\n* Bachelor of Science in Computer Science\n',
+    experience: () => screen.textContent += '\n**Experience:**\n* Zenith Semiconductor (20XX - Present)\n* Software Engineer - Developed and maintained web applications\n',
+    skills: () => screen.textContent += '\n**Skills:**\n* Programming Languages: JavaScript, Python, Java\n* Frameworks: React, Node.js\n* Other: Linux, Git, Agile methodologies\n',
+    aboutme: () => screen.textContent += '\n**About Me:**\n* Enjoy hiking, photography, and playing guitar\n* Married with a cat named Luna\n',
+    clear: () => screen.textContent = '',
+};
 
-function startGame() {
-    typeText("Thank you so much for checking out my website! Assuming the only users that will interact with this will be bots or recruiters, I hope to give you recruiters the opportunity for a fun break from the usual slog of resumes. If you would like to continue to see how I have tried to do this, please type 'continue' then press enter. If not, and you just want the information from my resume, please type 'nofun'.\n");
-}
-
-// Add functions for adventure sections, monster fights, spell casting, etc.
-
-input.addEventListener('keydown', (event) => {
+userInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        handleInput(input.value);
-        input.value = '';
+        const command = userInput.value.toLowerCase();
+        userInput.value = '';
+        screen.textContent += '\nbash: ' + command + '\n';
+
+        if (commands[command]) {
+            commands[command]();
+        } else {
+            screen.textContent += 'Invalid command. Please try again.\n';
+        }
     }
 });
-
-function handleInput(command) {
-    if (gameState === 'start') {
-        if (command === 'continue') {
-            gameState = 'adventure';
-            typeText("You are a wizard and have been cast out of magic school. You have been told that if, and only if, you are able to gather the four pages of the ancient text will you be able to rejoin the school. It is at this point you find yourself...\n");
-        } else if (command === 'nofun') {
-            typeText("Filler text for all resume information\n");
-        } else {
-            typeText("Invalid command. Please try again.\n");
-        }
-    } else if (gameState === 'adventure') {
-        // Handle adventure section commands
-    } else if (gameState === 'fight') {
-        // Handle monster fight commands
-    }
-}
-
-startGame();
