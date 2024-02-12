@@ -1,29 +1,42 @@
 body {
   font-family: monospace;
-  background-color: black;
-  color: green;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid green;
-  border-radius: 5px;
-}
-
-.command-line {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-#output {
+#terminal {
+  width: 80%;
+  border: none;
+  padding: 10px;
+  overflow: auto;
+}
+
+#screen {
+  white-space: pre-wrap; /* Preserve newlines */
+}
+
+#cursor {
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+#userInput {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
   width: 100%;
-  word-wrap: break-word;
-  animation: typing 2s steps(40, end);
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
 }
